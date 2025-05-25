@@ -28,10 +28,10 @@
     </div>
   </div>
   <script>
-    // Extract invite code from URL (e.g., /invite/dramatic-cookie-827)
-    const pathParts = window.location.pathname.split('/');
-    const code = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2];
-    document.getElementById('inviteCode').textContent = code || 'No code found';
+       // Extract invite code from URL (e.g., /dramatic-cookie-827)
+   const pathParts = window.location.pathname.split('/');
+   const code = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2];
+   document.getElementById('inviteCode').textContent = code || 'No code found';
   </script>
 </body>
 </html>
