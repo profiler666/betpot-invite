@@ -29,9 +29,9 @@
   </div>
   <script>
     // Extract invite code from URL (e.g., /invite/dramatic-cookie-827)
-    const code = window.location.pathname.split('/').pop();
+    const pathParts = window.location.pathname.split('/');
+    const code = pathParts[pathParts.length - 1] || pathParts[pathParts.length - 2];
     document.getElementById('inviteCode').textContent = code || 'No code found';
-    // Optionally, fetch bet preview from your backend here and display in #betPreview
   </script>
 </body>
 </html>
